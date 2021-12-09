@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #ededed;
+}
+
+main{
+    display: flex;
+    gap: 100px;
+}
+
+.container{
+    display: grid;
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.button-container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 10vw;
+    align-items: center;
+}
+
+.btn{
+    display: block;
+    padding: 15px 40px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: #f0ebd8;
+    border-radius: 3px;
+    color: black;
+    width: 130px;
+    font-size: 16px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    text-align: center;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: transform .07s ease-in-out;
+}
+
+.btn:active{
+    transform: scale(1.0);
+}
+
+#favcolor{
+    border: none;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+#favcolor::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+input[type="color"]:hover{
+    transform: scale(1.1);
+    transition: transform .07s ease-in-out;
+}
+
+input[type="color"]:active{
+    transform: scale(1.0);
+}
+
+#slider{
+    margin-top: 8px;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 5px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: aliceblue;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: black;
+    margin-top: -6px;
+}
+
+kbd{
+    display: block;
+    margin: 0;
+    font-size: 16px;
+}
+
