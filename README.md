@@ -1,0 +1,1 @@
+Etch-a-sketch is an application built with Html, CSS, and Javascript. It allows you to choose a resizeable board and draw, erase, and shade with various colors.
